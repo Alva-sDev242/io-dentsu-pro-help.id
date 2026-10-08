@@ -1,492 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" data-theme="dark">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Natsu Tech 🇨🇬 — Développeur & Créateur Digital</title>
-<meta name="description" content="Natsu Tech, développeur basé au Congo. Sites web, applications, design et réalité du métier de développeur." />
-<link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="NatsuTech's / Alva Dev : création de sites web et d’outils numériques adaptés à votre activité au Congo.">
+  <title>Accueil | NatsuTech's / Alva Dev 🇨🇬</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- ============ NAVIGATION ============ -->
-<header class="nav" id="nav">
-  <div class="nav__wrap">
-    <a href="#accueil" class="logo">
-      <span class="logo__mark">NT</span>
-      <span class="logo__text">Natsu<span class="logo__accent">Tech</span></span>
-      <span class="logo__flag">🇨🇬</span>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="NatsuTech's / Alva Dev — accueil">
+      <span class="brand-mark">NT</span><span class="brand-name">Natsu<span>Tech's</span></span><span class="brand-flag">/ Alva Dev 🇨🇬</span>
     </a>
-
-    <nav class="menu" id="menu">
-      <a href="#accueil" class="menu__link">Accueil</a>
-      <a href="#services" class="menu__link">Services</a>
-      <a href="#projets" class="menu__link">Projets</a>
-      <a href="#realites" class="menu__link">Réalités</a>
-      <a href="#apropos" class="menu__link">À propos</a>
-      <a href="#contact" class="menu__link menu__link--cta">Contact</a>
+    <nav class="site-nav" id="primary-navigation" aria-label="Navigation principale">
+      <a class="nav-link" href="index.html" aria-current="page">Accueil</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="projets.html">Projets</a>
+      <a class="nav-link" href="realites.html">Réalités</a>
+      <a class="nav-link" href="apropos.html">À propos</a>
+      <a class="nav-link nav-link--cta" href="contact.html">Contact</a>
     </nav>
-
-    <div class="nav__actions">
-      <button class="theme-btn" id="themeBtn" aria-label="Changer de thème">
-        <svg class="theme-btn__icon theme-btn__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-        <svg class="theme-btn__icon theme-btn__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème">☀</button>
+      <button class="nav-toggle" type="button" data-menu-toggle aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-
-<!-- ============ HERO ============ -->
-<section class="hero" id="accueil">
-  <div class="hero__glow"></div>
-  <div class="container hero__inner">
-
-    <div class="hero__text">
-      <span class="badge reveal">
-        <span class="badge__dot"></span> Disponible — Brazzaville, Congo
-      </span>
-
-      <h1 class="hero__title">
-        <span class="reveal">Je transforme</span>
-        <span class="reveal">vos idées en</span>
-        <span class="reveal"><span class="grad">expériences digitales</span></span>
-      </h1>
-
-      <p class="hero__sub reveal">
-        <strong>Natsu Tech</strong> — développeur full-stack & créateur d'applications.
-        Sites vitrines, applications web, e-commerce, identité visuelle.
-        Des solutions rapides, modernes et sur-mesure.
-      </p>
-
-      <div class="hero__actions reveal">
-        <a href="#realites" class="btn btn--primary">
-          La vraie vie de dev
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="https://wa.me/242065141056" target="_blank" rel="noopener" class="btn btn--ghost">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.7-1.6-2-.1-.3 0-.5.1-.6.1-.2.3-.4.5-.6.2-.2.3-.4.4-.6.1-.2 0-.5 0-.6 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .2.2 2 3 4.7 4.2 2.3 1 2.8.8 3.3.8.5 0 1.6-.6 1.9-1.3.2-.6.2-1.2.2-1.3 0-.2-.1-.3-.3-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
-          WhatsApp
-        </a>
-      </div>
-
-      <div class="hero__stats reveal">
-        <div><strong>30+</strong><span>Projets livrés</span></div>
-        <div><strong>5 ans</strong><span>D'expérience</span></div>
-        <div><strong>24h</strong><span>Réponse client</span></div>
-      </div>
-    </div>
-
-    <div class="hero__card reveal">
-      <div class="hero__card-head">
-        <span class="dot dot--red"></span>
-        <span class="dot dot--yellow"></span>
-        <span class="dot dot--green"></span>
-        <span class="hero__card-title">natsu.ts</span>
-      </div>
-      <pre class="code"><code><span class="c-key">const</span> <span class="c-var">natsu</span> = {
-  <span class="c-prop">nom</span>: <span class="c-str">"Natsu Tech 🇨🇬"</span>,
-  <span class="c-prop">rôle</span>: <span class="c-str">"Développeur Full-Stack"</span>,
-  <span class="c-prop">skills</span>: [<span class="c-str">"JS"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>],
-  <span class="c-prop">contact</span>: <span class="c-str">"+242 06 514 1056"</span>,
-  <span class="c-prop">café</span>: <span class="c-bool">Infinity</span>
-};
-
-<span class="c-cmt">// Prêt à coder votre projet 🚀</span>
-<span class="c-key">await</span> natsu.<span class="c-fn">créer</span>(<span class="c-var">votreIdée</span>);</code></pre>
-    </div>
-
+<main id="contenu"><section class="hero"><div class="container hero-grid">
+  <div>
+    <span class="eyebrow"><span class="eyebrow-dot"></span> Développement web · Congo 🇨🇬</span>
+    <h1>Votre activité mérite un site qui <em>travaille pour vous.</em></h1>
+    <p class="lead">Je crée des sites web et des outils numériques simples à utiliser, pensés pour présenter votre activité, répondre à vos besoins et aider vos clients à vous contacter.</p>
+    <div class="button-row"><a class="button button--primary" href="contact.html">Parlons de votre projet <span aria-hidden="true">→</span></a><a class="button button--plain" href="services.html">Découvrir les services</a></div>
   </div>
-</section>
-
-<!-- ============ SERVICES ============ -->
-<section class="section" id="services">
-  <div class="container">
-    <div class="section__head reveal">
-      <span class="section__tag">01 — Services</span>
-      <h2 class="section__title">Ce que je construis pour vous</h2>
-      <p class="section__lead">Chaque service est une porte. Cliquez pour explorer.</p>
-    </div>
-
-    <div class="services">
-      <a href="#projets" class="service reveal">
-        <div class="service__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <h3 class="service__title">Sites Web</h3>
-        <p class="service__desc">Vitrines, portfolios, blogs — rapides et optimisés SEO.</p>
-        <span class="service__link">Explorer →</span>
-      </a>
-
-      <a href="#projets" class="service reveal">
-        <div class="service__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
-        </div>
-        <h3 class="service__title">Applications</h3>
-        <p class="service__desc">Apps mobiles & web performantes, du concept au déploiement.</p>
-        <span class="service__link">Explorer →</span>
-      </a>
-
-      <a href="#projets" class="service reveal">
-        <div class="service__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg>
-        </div>
-        <h3 class="service__title">E-commerce</h3>
-        <p class="service__desc">Boutiques en ligne avec paiement et gestion de commandes.</p>
-        <span class="service__link">Explorer →</span>
-      </a>
-
-      <a href="#contact" class="service reveal">
-        <div class="service__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.8-.1 2.6-.4l4.4 1-1-4.4c.6-1.2 1-2.7 1-4.2 0-5.5-4.5-10-10-10z"/></svg>
-        </div>
-        <h3 class="service__title">Design UI/UX</h3>
-        <p class="service__desc">Interfaces modernes, identité visuelle et prototypage.</p>
-        <span class="service__link">Explorer →</span>
-      </a>
-    </div>
+  <aside class="hero-card" aria-label="Approche de travail">
+    <div class="card-top"><span class="card-kicker">NatsuTech's / Alva Dev</span><span class="status-pill">Congo · 🇨🇬</span></div>
+    <h2>Du besoin au site en ligne.</h2>
+    <p>Une démarche claire, du premier échange jusqu’aux derniers ajustements.</p>
+    <ul class="check-list"><li>Une expérience adaptée au téléphone</li><li>Des contenus clairs et une navigation simple</li><li>Un contact direct par e-mail ou WhatsApp</li></ul>
+  </aside>
+</div></section>
+<section class="section section--border"><div class="container">
+  <div class="section-heading"><span class="eyebrow">Ce que je peux construire</span><h2>Un outil adapté à votre activité</h2><p>Choisissez le bon point de départ : une présence professionnelle, un service en ligne ou un outil qui simplifie le quotidien.</p></div>
+  <div class="cards">
+    <a class="card" href="services.html"><span class="card-icon" aria-hidden="true">▣</span><h3>Site professionnel</h3><p>Présentez vos services, vos horaires et vos coordonnées sur tous les écrans.</p><span class="text-link">Explorer les services →</span></a>
+    <a class="card" href="services.html"><span class="card-icon" aria-hidden="true">⌘</span><h3>Application web</h3><p>Centralisez une tâche, une demande ou une information dans un outil conçu pour vous.</p><span class="text-link">Explorer les services →</span></a>
+    <a class="card" href="services.html"><span class="card-icon" aria-hidden="true">↗</span><h3>Catalogue & commandes</h3><p>Montrez vos produits et facilitez les demandes ou commandes depuis le mobile.</p><span class="text-link">Explorer les services →</span></a>
   </div>
-</section>
-
-<!-- ============ PROJETS ============ -->
-<section class="section section--alt" id="projets">
-  <div class="container">
-    <div class="section__head reveal">
-      <span class="section__tag">02 — Projets</span>
-      <h2 class="section__title">Réalisations récentes</h2>
-      <p class="section__lead">Chaque carte est cliquable et mène vers son univers.</p>
-    </div>
-
-    <div class="projects">
-      <a href="https://wa.me/242065141056?text=Bonjour%20Natsu%20Tech%2C%20je%20veux%20un%20site%20comme%20Flowbase" target="_blank" rel="noopener" class="project reveal">
-        <div class="project__top"><span class="project__tag">SaaS</span><span class="project__year">2025</span></div>
-        <h3 class="project__title">Flowbase</h3>
-        <p class="project__desc">Dashboard analytique temps réel. Ingestion de données, alertes, rapports.</p>
-        <div class="project__stack"><span>Next.js</span><span>TypeScript</span><span>Postgres</span></div>
-        <span class="project__cta">Voir le projet →</span>
-      </a>
-
-      <a href="https://wa.me/242065141056?text=Bonjour%20Natsu%20Tech%2C%20je%20veux%20une%20boutique%20comme%20Atelier%20Nord" target="_blank" rel="noopener" class="project reveal">
-        <div class="project__top"><span class="project__tag">E-commerce</span><span class="project__year">2024</span></div>
-        <h3 class="project__title">Atelier Nord</h3>
-        <p class="project__desc">Boutique headless ultra-rapide. LCP passé de 4,8s à 1,1s, conversion +38%.</p>
-        <div class="project__stack"><span>Astro</span><span>Stripe</span><span>Cloudflare</span></div>
-        <span class="project__cta">Voir le projet →</span>
-      </a>
-
-      <a href="https://wa.me/242065141056?text=Bonjour%20Natsu%20Tech%2C%20je%20veux%20une%20app%20comme%20Kongo%20Food" target="_blank" rel="noopener" class="project reveal">
-        <div class="project__top"><span class="project__tag">Mobile</span><span class="project__year">2024</span></div>
-        <h3 class="project__title">Kongo Food</h3>
-        <p class="project__desc">App de livraison de repas à Brazzaville. Suivi live, paiement mobile money.</p>
-        <div class="project__stack"><span>React Native</span><span>Node.js</span><span>MongoDB</span></div>
-        <span class="project__cta">Voir le projet →</span>
-      </a>
-
-      <a href="https://wa.me/242065141056?text=Bonjour%20Natsu%20Tech%2C%20je%20veux%20un%20outil%20comme%20Snapql" target="_blank" rel="noopener" class="project reveal">
-        <div class="project__top"><span class="project__tag">Open Source</span><span class="project__year">2023</span></div>
-        <h3 class="project__title">Snapql</h3>
-        <p class="project__desc">CLI GraphQL interactive. Introspection, cache, génération de types.</p>
-        <div class="project__stack"><span>Node.js</span><span>GraphQL</span><span>Ink</span></div>
-        <span class="project__cta">Voir le projet →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ RÉALITÉS DU DEV ============ -->
-<section class="section realities" id="realites">
-  <div class="container">
-
-    <div class="section__head reveal">
-      <span class="section__tag">03 — Réalités du Dev</span>
-      <h2 class="section__title">Coder, c'est pas ce qu'on croit.</h2>
-      <p class="section__lead">
-        On imagine le développeur assis tranquille à taper du code magique.
-        Voici la <strong>vraie</strong> réalité — langage par langage.
-      </p>
-    </div>
-
-    <div class="langs">
-
-      <article class="lang reveal">
-        <header class="lang__head">
-          <span class="lang__icon" style="background:#f7df1e;color:#000">JS</span>
-          <div>
-            <h3 class="lang__name">JavaScript</h3>
-            <span class="lang__tag">Le chaos maîtrisé</span>
-          </div>
-        </header>
-        <p class="lang__pitch">
-          Le langage le plus utilisé au monde… et le plus détesté le lundi matin.
-          Créé en 10 jours en 1995, il porte encore les stigmates.
-        </p>
-        <ul class="lang__facts">
-          <li><code>0.1 + 0.2 !== 0.3</code> → <em>vrai</em>. Bienvenue.</li>
-          <li><code>typeof null === "object"</code> → bug de 1995, jamais corrigé.</li>
-          <li><code>[] + [] = ""</code>, <code>[] + {} = "[object Object]"</code>. Amusez-vous.</li>
-          <li>90% du temps : chercher pourquoi <code>undefined is not a function</code>.</li>
-        </ul>
-        <div class="lang__reality">
-          <span class="lang__reality-label">Réalité terrain</span>
-          <p>On passe plus de temps à lire de la doc et Stack Overflow qu'à écrire du code. Et c'est normal.</p>
-        </div>
-      </article>
-
-      <article class="lang reveal">
-        <header class="lang__head">
-          <span class="lang__icon" style="background:#3776ab;color:#ffd43b">Py</span>
-          <div>
-            <h3 class="lang__name">Python</h3>
-            <span class="lang__tag">Le sage du groupe</span>
-          </div>
-        </header>
-        <p class="lang__pitch">
-          Lisible, puissant, polyvalent. Du script de 5 lignes à l'IA qui génère des images.
-          Mais attention aux pièges.
-        </p>
-        <ul class="lang__facts">
-          <li>Indentation obligatoire — une tabulation et tout casse.</li>
-          <li>Le <code>GIL</code> t'empêche d'exploiter tous tes cœurs CPU.</li>
-          <li><code>pip install</code> sur un vieux projet → enfer des dépendances.</li>
-          <li>2.x et 3.x sont incompatibles. On en parle encore en 2025.</li>
-        </ul>
-        <div class="lang__reality">
-          <span class="lang__reality-label">Réalité terrain</span>
-          <p>Parfait pour prototyper en 1h. Moins fun quand il faut optimiser un service qui tourne en prod à 3h du matin.</p>
-        </div>
-      </article>
-
-      <article class="lang reveal">
-        <header class="lang__head">
-          <span class="lang__icon" style="background:#e34f26;color:#fff">H5</span>
-          <div>
-            <h3 class="lang__name">HTML & CSS</h3>
-            <span class="lang__tag">Pas de vrais langages ?</span>
-          </div>
-        </header>
-        <p class="lang__pitch">
-          On dit souvent "c'est pas de la programmation". Pourtant, 80% du travail
-          visible d'un site repose dessus. Et c'est loin d'être simple.
-        </p>
-        <ul class="lang__facts">
-          <li>Centrer une <code>div</code> verticalement = 20 ans de souffrance (résolu en 2017 avec Flexbox).</li>
-          <li>Un <code>margin</code> qui s'effondre, une <code>div</code> qui flotte mal… classiques.</li>
-          <li>Il existe 4 façons de faire la même mise en page. Toutes marchent. Aucune n'est parfaite.</li>
-          <li>Safari affiche encore des choses différemment de Chrome. On vit avec.</li>
-        </ul>
-        <div class="lang__reality">
-          <span class="lang__reality-label">Réalité terrain</span>
-          <p>Un bon dev front-end est aussi précieux qu'un bon back-end. Le CSS, c'est un art qui s'apprend en années.</p>
-        </div>
-      </article>
-
-      <article class="lang reveal">
-        <header class="lang__head">
-          <span class="lang__icon" style="background:#00758f;color:#fff">SQL</span>
-          <div>
-            <h3 class="lang__name">SQL</h3>
-            <span class="lang__tag">Le dinosaure increvable</span>
-          </div>
-        </header>
-        <p class="lang__pitch">
-          Créé en 1974. Toujours là. Toujours indispensable. Et toujours aussi
-          facile de faire une requête qui met 40 secondes à répondre.
-        </p>
-        <ul class="lang__facts">
-          <li>Un <code>JOIN</code> oublié sur une table de 10M lignes = serveur à genoux.</li>
-          <li>Pas d'<code>INDEX</code> = requête lente. Tout le monde l'oublie.</li>
-          <li><code>NULL</code> n'est égal à rien, pas même à <code>NULL</code>. Logique.</li>
-          <li>Entre MySQL, Postgres, SQLite : la syntaxe change subtilement.</li>
-        </ul>
-        <div class="lang__reality">
-          <span class="lang__reality-label">Réalité terrain</span>
-          <p>Maîtriser SQL, c'est comprendre 70% des problèmes de performance d'une app. C'est un super-pouvoir.</p>
-        </div>
-      </article>
-
-      <article class="lang reveal">
-        <header class="lang__head">
-          <span class="lang__icon" style="background:#f05033;color:#fff">Git</span>
-          <div>
-            <h3 class="lang__name">Git</h3>
-            <span class="lang__tag">Meilleur ami / pire ennemi</span>
-          </div>
-        </header>
-        <p class="lang__pitch">
-          L'outil que tout le monde utilise, que personne ne maîtrise à 100%,
-          et qui peut sauver — ou ruiner — ta journée en une commande.
-        </p>
-        <ul class="lang__facts">
-          <li><code>git push --force</code> sur la mauvaise branche = carrière écourtée.</li>
-          <li>Un <code>merge conflict</code> à 18h = tu finis à 22h.</li>
-          <li>Personne ne comprend vraiment <code>git rebase</code> la première fois.</li>
-          <li>Un <code>.env</code> commité par erreur = clés API exposées publiquement.</li>
-        </ul>
-        <div class="lang__reality">
-          <span class="lang__reality-label">Réalité terrain</span>
-          <p>Savoir Git, c'est 50% du métier en équipe. Le reste, c'est du code autour.</p>
-        </div>
-      </article>
-
-      <article class="lang reveal">
-        <header class="lang__head">
-          <span class="lang__icon" style="background:#ff5722;color:#fff">🐛</span>
-          <div>
-            <h3 class="lang__name">Les Bugs</h3>
-            <span class="lang__tag">Le quotidien</span>
-          </div>
-        </header>
-        <p class="lang__pitch">
-          Un développeur, c'est quelqu'un qui passe 5 minutes à écrire un bug
-          et 5 heures à comprendre pourquoi il marche "parfois".
-        </p>
-        <ul class="lang__facts">
-          <li>Le bug qui disparaît quand tu ajoutes un <code>console.log</code>.</li>
-          <li>"Ça marche sur ma machine." — phrase la plus dangereuse du métier.</li>
-          <li>Un point-virgule manquant = 2h de recherche.</li>
-          <li>Le bug qui apparaît <strong>uniquement</strong> le vendredi à 17h59, en prod.</li>
-        </ul>
-        <div class="lang__reality">
-          <span class="lang__reality-label">Réalité terrain</span>
-          <p>On ne paie pas un dev pour écrire du code. On le paie pour <strong>résoudre des problèmes</strong>. Le code, c'est juste l'outil.</p>
-        </div>
-      </article>
-
-    </div>
-
-    <div class="truth reveal">
-      <div class="truth__head">
-        <span class="truth__icon">💡</span>
-        <h3>Ce qu'on ne te dit jamais sur ce métier</h3>
-      </div>
-      <div class="truth__grid">
-        <div class="truth__item">
-          <strong>80% du temps, on lit du code</strong>
-          <p>Pas le nôtre. Celui des autres. Ou le nôtre d'il y a 6 mois, qu'on ne comprend plus.</p>
-        </div>
-        <div class="truth__item">
-          <strong>Les tutos mentent</strong>
-          <p>Un projet réel a des deadlines, des clients qui changent d'avis, et du legacy à gérer.</p>
-        </div>
-        <div class="truth__item">
-          <strong>Le syndrome de l'imposteur est universel</strong>
-          <p>Même après 10 ans, on se sent encore débutant sur certains sujets. C'est sain.</p>
-        </div>
-        <div class="truth__item">
-          <strong>Être bon ≠ tout savoir</strong>
-          <p>Être bon, c'est savoir <em>chercher</em>, <em>tester</em>, <em>débugger</em>, et <em>apprendre vite</em>.</p>
-        </div>
-        <div class="truth__item">
-          <strong>La technique n'est que 50%</strong>
-          <p>Communiquer avec un client non-technique, c'est aussi dur que coder un algo complexe.</p>
-        </div>
-        <div class="truth__item">
-          <strong>L'apprentissage ne s'arrête jamais</strong>
-          <p>Chaque année sort un nouveau framework. On trie, on teste, on garde l'essentiel.</p>
-        </div>
-      </div>
-    </div>
-
-    <blockquote class="quote reveal">
-      <p>"Le code, c'est comme l'humour. Si tu dois l'expliquer, c'est que c'est mauvais."</p>
-      <cite>— Un dev anonyme, 3h du matin, un vendredi</cite>
-    </blockquote>
-
-    <div class="realities__cta reveal">
-      <p>Un projet en tête ? Parlons-en en vrai.</p>
-      <a href="https://wa.me/242065141056" target="_blank" rel="noopener" class="btn btn--primary">
-        Discuter sur WhatsApp
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ============ À PROPOS ============ -->
-<section class="section section--alt" id="apropos">
-  <div class="container about">
-    <div class="about__text reveal">
-      <span class="section__tag">04 — À propos</span>
-      <h2 class="section__title">Natsu Tech, développeur congolais 🇨🇬</h2>
-      <p>
-        Je m'appelle <strong>Natsu</strong>, développeur full-stack basé à Brazzaville.
-        Je crée des produits digitaux qui allient <strong>performance</strong>,
-        <strong>design</strong> et <strong>simplicité</strong>.
-      </p>
-      <p>
-        Mon objectif : aider les entreprises et créateurs congolais (et d'ailleurs)
-        à exister en ligne avec des outils modernes, sans compromis sur la qualité.
-      </p>
-
-      <div class="about__actions">
-        <a href="https://wa.me/242065141056" target="_blank" rel="noopener" class="btn btn--primary">Démarrer un projet</a>
-        <a href="tel:+242065141056" class="btn btn--ghost">📞 +242 06 514 1056</a>
-      </div>
-    </div>
-
-    <div class="about__cards reveal">
-      <div class="info-card"><span class="info-card__label">Localisation</span><strong>Brazzaville, Congo</strong></div>
-      <div class="info-card"><span class="info-card__label">Disponibilité</span><strong>Ouvert aux missions</strong></div>
-      <div class="info-card"><span class="info-card__label">Langues</span><strong>FR · EN · Lingala</strong></div>
-      <div class="info-card"><span class="info-card__label">Contact direct</span><strong>+242 06 514 1056</strong></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section section--contact" id="contact">
-  <div class="container contact">
-    <div class="reveal">
-      <span class="section__tag">05 — Contact</span>
-      <h2 class="contact__title">Un projet en tête ?</h2>
-      <p class="contact__sub">Réponse garantie sous 24h. Choisissez votre canal :</p>
-
-      <div class="contact__grid">
-        <a href="https://wa.me/242065141056" target="_blank" rel="noopener" class="contact__btn reveal">
-          <span class="contact__icon">💬</span>
-          <span class="contact__label">WhatsApp</span>
-          <span class="contact__val">+242 06 514 1056</span>
-        </a>
-        <a href="tel:+242065141056" class="contact__btn reveal">
-          <span class="contact__icon">📞</span>
-          <span class="contact__label">Appel direct</span>
-          <span class="contact__val">+242 06 514 1056</span>
-        </a>
-        <a href="sms:+242065141056" class="contact__btn reveal">
-          <span class="contact__icon">✉️</span>
-          <span class="contact__label">SMS</span>
-          <span class="contact__val">+242 06 514 1056</span>
-        </a>
-        <a href="mailto:contact@natsutech.cg" class="contact__btn reveal">
-          <span class="contact__icon">📧</span>
-          <span class="contact__label">Email</span>
-          <span class="contact__val">contact@natsutech.cg</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <span class="logo__mark">NT</span>
-      <span>Natsu Tech 🇨🇬</span>
-    </div>
-    <p>© <span id="year"></span> Natsu Tech — Brazzaville, Congo.</p>
+</div></section>
+<section class="section section--border"><div class="container">
+  <div class="section-heading"><span class="eyebrow">Comment ça se passe</span><h2>Des étapes simples, sans jargon.</h2><p>On avance ensemble et on valide la direction avant d’ajouter des fonctions.</p></div>
+  <div class="process"><article class="step"><span class="step-number">01 / ÉCHANGE</span><h3>Comprendre</h3><p>On précise votre activité, vos clients et le problème à résoudre.</p></article><article class="step"><span class="step-number">02 / PLAN</span><h3>Organiser</h3><p>On choisit les pages, les fonctions et le contenu utiles.</p></article><article class="step"><span class="step-number">03 / CRÉATION</span><h3>Construire</h3><p>Je prépare une version à tester sur ordinateur et téléphone.</p></article><article class="step"><span class="step-number">04 / LIVRAISON</span><h3>Améliorer</h3><p>On ajuste les détails avant la mise en ligne.</p></article></div>
+</div></section>
+<section class="section section--border"><div class="container"><div class="callout"><div><h2>Vous avez une idée, même encore floue ?</h2><p>Décrivez-la simplement : on trouvera ensemble le bon format.</p></div><a class="button button--primary" href="contact.html">Me contacter <span aria-hidden="true">→</span></a></div></div></section></main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span data-year></span> <span class="footer-brand">NatsuTech's / Alva Dev 🇨🇬</span></p>
+    <p class="footer-credit">Développé par <strong>NatsuTech's / Alva Dev 🇨🇬</strong></p>
+    <nav class="footer-links" aria-label="Liens de pied de page"><a href="services.html">Services</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a></nav>
   </div>
 </footer>
-
-<!-- ============ FAB WHATSAPP ============ -->
-<a href="https://wa.me/242065141056" target="_blank" rel="noopener" class="fab" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.7-1.6-2-.1-.3 0-.5.1-.6.1-.2.3-.4.5-.6.2-.2.3-.4.4-.6.1-.2 0-.5 0-.6 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .2.2 2 3 4.7 4.2 2.3 1 2.8.8 3.3.8.5 0 1.6-.6 1.9-1.3.2-.6.2-1.2.2-1.3 0-.2-.1-.3-.3-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
-</a>
-
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
